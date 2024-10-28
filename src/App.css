@@ -40,3 +40,21 @@
 .read-the-docs {
   color: #888;
 }
+.produto-imagem{
+  
+}
+
+.produto-tem{
+width: 300px;
+border: 1px solid #f0f0f0;
+padding:15px 20px;
+box-sizing: border-box;
+box-shadow: 0px 0px 5px rgb(195, 195, 195);
+}
+.container-imagem{
+display:flex;
+overflow: hidden;
+}
+.produto-tem>.container-imagem>img{
+  width:100%;
+}

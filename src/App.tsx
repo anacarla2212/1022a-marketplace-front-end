@@ -14,7 +14,7 @@ function App() {
   useEffect(() => {
     setNome("Guilherme Terenciani")
     //Buscar os dados do BackENd
-    fetch("https://one022a-marketplace-e90o.onrender.com/produtos")
+    fetch("https://one022a-marketplace-zvv4.onrender.com/produtos")
       .then(resposta => resposta.json())
       .then(dados => setProdutos(dados))
     //Colocar em uma variável
@@ -29,7 +29,10 @@ function App() {
             return (
               <div key={produto.id} className="produto-item">
                 <h1>{produto.nome}</h1>
-                <img src={produto.imagem} alt="Imagem do celular" />
+                <div className='container-imagem'>
+                <img src={produto.imagem} alt="Imagem do celular" />  
+                 </div>
+
                 <p>{produto.preco}</p>
                 <p>{produto.descricao}</p>
               </div>
